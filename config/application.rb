@@ -7,7 +7,11 @@ require 'action_mailer/railtie'
 require 'action_view/railtie'
 require 'sprockets/railtie'
 
-Bundler.require *Rails.groups
+Bundler.setup *Rails.groups
+
+require 'coffee-rails'
+require 'jquery/rails'
+require 'sass/rails'
 
 module RepresentExample
   class Application < Rails::Application
