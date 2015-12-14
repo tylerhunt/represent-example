@@ -6,4 +6,11 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
 
-  %body= yield
+  %body
+    %header
+      %h1 Represent Example
+
+      %nav
+        %pre= current_user.inspect
+
+    %main= yield
