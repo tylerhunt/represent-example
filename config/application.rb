@@ -11,6 +11,7 @@ require 'sprockets/railtie'
 Bundler.setup *Rails.groups
 
 require 'coffee-rails'
+require 'haml-rails'
 require 'jquery/rails'
 require 'sass/rails'
 
